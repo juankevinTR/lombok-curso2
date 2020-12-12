@@ -6,12 +6,26 @@
 
     <groupId>com.juankevintrujillo</groupId>
     <artifactId>lombok-curso2</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>getter</module>
+    </modules>
 
     <properties>
         <version.jdk>8</version.jdk>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <version.lombok>1.18.16</version.lombok>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${version.lombok}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
 </project>
